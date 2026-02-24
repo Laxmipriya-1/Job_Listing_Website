@@ -1,16 +1,187 @@
-# React + Vite
+# 💼 Job Listing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+The **Job Listing Website** is a fully functional and responsive web application built using **React.js** and **Tailwind CSS**. It displays job opportunities in a clean, modern, and user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can browse job listings displayed as interactive cards and filter them dynamically based on job title, location, category, and experience level — without reloading the page.
 
-## React Compiler
+This project focuses on modern UI/UX principles, component-based architecture, state management, and responsive design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Objectives
+
+* Build a responsive Job Listing website using React.js.
+* Implement reusable components for job cards and filters.
+* Add dynamic filtering using React state management.
+* Apply modern UI/UX principles with Tailwind CSS.
+* Use GitHub for version control and project tracking.
+
+---
+
+## ✨ Features
+
+### 1️⃣ Job Cards
+
+* Each job is displayed as a reusable React component.
+* Includes:
+
+  * Job Title
+  * Company Name
+  * Location
+  * Salary (optional)
+  * Short Description
+* **"View More"** button opens detailed job information in a modal component.
+
+---
+
+### 2️⃣ Dynamic Filter Options
+
+Users can filter job listings based on:
+
+* 🔎 **Job Title** (Keyword Search)
+* 📍 **Location** (City/Country)
+* 🏷️ **Category** (IT, Marketing, Design, etc.)
+* 🎓 **Experience Level** (Fresher, Mid-level, Senior)
+* ♻️ **Clear/Reset Filters**
+
+Filters update instantly using React state without page reload.
+
+---
+
+### 3️⃣ Interactive Features
+
+* Real-time search functionality
+* Dynamic filtering with useState
+* Conditional rendering
+* Pagination for large job listings
+* Modal pop-up for detailed job descriptions
+* Smooth hover effects and transitions using Tailwind CSS
+
+---
+
+### 4️⃣ Responsive Design
+
+The website is fully responsive and optimized for:
+
+* 📱 Mobile Devices
+* 📱 Tablets
+* 💻 Desktops
+
+Built using Tailwind CSS utility classes and responsive breakpoints.
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* **React.js** (Component-based UI development)
+* **JavaScript (ES6+)**
+* **Tailwind CSS** (Utility-first CSS framework)
+
+### State Management
+
+* React Hooks (`useState`, `useEffect`)
+
+### Development Tools
+
+* Node.js
+* npm
+* VS Code
+
+### Deployment
+
+* Vercel / Netlify / GitHub Pages
+
+---
+
+## 📁 Project Structure
+
+```
+job-listing-website/
+│
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── FooterDiv - Footer.jsx
+│   │   ├── SearchDiv - Search.jsx
+│   │   ├── ValueDiv - Value.jsx
+│   │   ├── Navbar - Navbar.jsx
+│   │
+│   ├── assets/
+│   │   └── images
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│   └── vercel.json
+│   
+├── tailwind.config.js
+├── package.json
+├── package-lock.json
+├── index.html
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed using:
+
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
+
+### Example (Vercel Deployment):
+
+1. Push code to GitHub
+2. Import repository into Vercel
+3. Deploy with default settings
+
+---
+
+## 📊 Evaluation Criteria Coverage
+
+| Criteria       | Implementation                                           |
+| -------------- | -------------------------------------------------------- |
+| UI/UX & Design | Modern Tailwind UI, clean layout, responsive design      |
+| Functionality  | Dynamic filters, reusable components, modals, pagination |
+| Code Quality   | Component-based structure, clean hooks usage             |
+| GitHub Usage   | Structured commits and repository management             |
+| Presentation   | Deployed live project with demo explanation              |
+
+---
+
+## 💡 Challenges Faced
+
+* Managing multiple filter states simultaneously
+* Passing data between components using props
+* Implementing modal without breaking layout
+* Ensuring responsive design using Tailwind breakpoints
+
+### ✅ Solutions Applied
+
+* Used centralized state in App component
+* Applied React hooks efficiently
+* Used conditional rendering for modals
+* Leveraged Tailwind responsive utilities
+
+---
+
+## 🔮 Future Improvements
+
+* Backend integration with database
+* User authentication (Login/Signup)
+* Save/Favorite jobs feature
+* Apply for job functionality
+* Dark mode toggle
+* Advanced filtering (salary range, job type)
+
+---
+
+
